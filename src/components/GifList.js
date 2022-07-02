@@ -1,10 +1,11 @@
 import React from "react"
+import ListGroup from "react-bootstrap/ListGroup"
 
 export default function GifList({ gifs }) {
   let data = gifs.data
 
   return (
-    <div>
+    <ListGroup>
       <ul>
         {data &&
           data.map((gif, i) => (
@@ -13,6 +14,6 @@ export default function GifList({ gifs }) {
             </li>
           ))}
       </ul>
-    </div>
+    </ListGroup>
   )
 }

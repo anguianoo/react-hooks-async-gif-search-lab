@@ -1,4 +1,5 @@
 import React from "react"
+import { Button } from "react-bootstrap"
 
 export default function GifSearch({ searchTerm, setSearchTerm, handleSearch }) {
   // const [searchTerm, setSearchTerm] = useState("")
@@ -12,7 +13,7 @@ export default function GifSearch({ searchTerm, setSearchTerm, handleSearch }) {
           onChange={e => setSearchTerm(e.target.value)}
           value={searchTerm}
         />
-        <button>Search</button>
+        <Button variant="success">Find Gifs</Button>
       </form>
     </div>
   )
